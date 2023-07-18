@@ -19,3 +19,9 @@ interval to a small number of seconds might add too much workload for the bot, o
 Even with persistence, all the data is still stored in the `Application` or a `ConversationHandler`
 instance, but synced with an external storage. So I thought that it's probably easier to just write
 and read directly from a database.
+
+## How to run
+
+Clone the repo and run `docker compose up`.
+
+After making changes to the bot, you can restart it with `docker compose restart telegram-bot`. New changes will be applied thanks to a mount volume in `docker-compose.yaml`.
