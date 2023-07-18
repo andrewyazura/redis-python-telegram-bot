@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "redis-python-telegram-bot"
+version = "0.1.0"
+description = ""
+authors = ["Andrew Yatsura"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "telegram_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-telegram-bot = "^20.4"
+redis = {extras = ["hiredis"], version = "^4.6.0"}
+fastapi = {extras = ["all"], version = "^0.100.0"}
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+ruff = "^0.0.278"
+mypy = "^1.4.1"
+types-redis = "^4.6.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
+
+[tool.ruff]
+line-length = 79
+
+[tool.mypy]
+follow_imports = "skip"
