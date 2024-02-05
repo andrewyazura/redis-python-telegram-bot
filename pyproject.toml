@@ -11,7 +11,7 @@ packages = [{include = "telegram_bot"}]
 python = "^3.11"
 python-telegram-bot = "^20.4"
 redis = {extras = ["hiredis"], version = "^4.6.0"}
-fastapi = {extras = ["all"], version = "^0.100.0"}
+fastapi = {extras = ["all"], version = "^0.109.1"}
 uvicorn = {extras = ["standard"], version = "^0.22.0"}
 
 [tool.poetry.group.dev.dependencies]
