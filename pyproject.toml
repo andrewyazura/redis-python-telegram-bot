@@ -15,7 +15,7 @@ fastapi = {extras = ["all"], version = "^0.109.1"}
 uvicorn = {extras = ["standard"], version = "^0.22.0"}
 
 [tool.poetry.group.dev.dependencies]
-black = "^23.7.0"
+black = "^24.3.0"
 ruff = "^0.0.278"
 mypy = "^1.4.1"
 types-redis = "^4.6.0.2"
